@@ -20,8 +20,8 @@ setup(
     url='http://github.com/mbr/dj',
     license='MIT',
     packages=find_packages(exclude=['tests']),
-    install_requires=['click', 'requests', 'six', 'mutagen', 'slugger',
-                      'soundcloud'],
+    install_requires=['click', 'requests[security]', 'six', 'mutagen',
+                      'slugger', 'soundcloud'],
     entry_points={
         'console_scripts': [
             'dj = dj.cli:main',

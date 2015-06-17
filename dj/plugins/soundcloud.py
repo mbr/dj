@@ -48,7 +48,8 @@ class SoundCloud(SingleHostMixin, Plugin):
                     print 'Error downloading artwork: {}'.format(e)
                 else:
                     resp.raise_for_status()
-                    raise NotImplementedError
+                    # there's artwork here, but we ignore it for now
+                    #raise NotImplementedError
 
             meta.save(tmpfile.name)
 
