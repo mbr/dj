@@ -28,4 +28,4 @@ def main(urls, dest_dir):
 
                 if ext == 'mp3':
                     # apply replaygain as id3v2 tag
-                    subprocess.check_call(['mp3gain', '-s', 'i', fn])
+                    subprocess.check_call(['replaygain', fn])
